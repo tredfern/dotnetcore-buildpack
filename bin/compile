@@ -11,6 +11,7 @@ if [ "$STACK" != "heroku-16" ]; then
 	echo "Need heroku-16 stack"
 	exit 1
 fi
+set -x
 
 ### Configure directories
 BUILD_DIR=${1:-}
